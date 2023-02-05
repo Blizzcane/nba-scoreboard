@@ -1,12 +1,26 @@
 from flask import Flask 
 from nba_api.live.nba.endpoints import scoreboard
 
-# Today's Score Board
-games = scoreboard.ScoreBoard()
+# Query nba.live.endpoints.scoreboard and  list games in localTimeZone
+from datetime import datetime, timezone
+from dateutil import parser
+from nba_api.live.nba.endpoints import scoreboard, boxscore
 
-gameData = games.get_json()
+# f = "{awayTeam} vs. {homeTeam}" 
 
-print(gameData)
+# board = scoreboard.ScoreBoard()
+# print("ScoreBoardDate: " + board.score_board_date)
+# games = board.games.get_dict()
+# for game in games:
+#     print("")
+#     print(f.format(gameId=game['gameId'], awayTeam=game['awayTeam']['teamName'], homeTeam=game['homeTeam']['teamName']))
+#     box = boxscore.BoxScore(game['gameId']) 
+#     currentScore = "{homeScore} - {awayScore}"
+    
+#     print(currentScore.format(homeScore=box.get_dict()['game']['homeTeam']['score'],awayScore=box.get_dict()['game']['awayTeam']['score']))
+#     print(game['gameStatusText'])
+    
+ 
 app = Flask(__name__)
 
 @app.route("/")
