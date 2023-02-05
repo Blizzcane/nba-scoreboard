@@ -9,7 +9,6 @@ You will need to have flask and nba_api installed in your python environment. Yo
 
 ```
 pip install flask nba_api
-
 ```
 
 ### Running the Server
