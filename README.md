@@ -1,4 +1,4 @@
-# NBA Game Score Server
+# NBA Game Scoreboard
 This is a Flask-based web server that displays the latest scores of NBA games. The scores are fetched from the nba_api and are updated every minute.
 
 ## Getting Started
