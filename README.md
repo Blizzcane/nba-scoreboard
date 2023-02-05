@@ -21,10 +21,4 @@ The server will start at http://127.0.0.1:5000/ by default.
 
 ## Built With
 - Flask - The web framework used
-- nba_api - API for NBA data
-
-## Authors
-- OpenAI - Initial work
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- nba_api - API for NBA data 
