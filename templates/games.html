@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>NBA Games</title>
+  </head>
+  <body>
+    <h1>NBA Games</h1>
+    <table>
+      <tr>
+        <th>Away Team</th>
+        <th>Home Team</th>
+        <th>Score</th>
+        <th>Status</th>
+      </tr>
+      {% for game in games %}
+      <tr>
+        <td>{{ game.awayTeam }}</td>
+        <td>{{ game.homeTeam }}</td>
+        <td>{{ game.currentScore }}</td>
+        <td>{{ game.gameStatusText }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
